@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Patua+One&display=swap');
+
+body {
+    /*background-color: #FFF1C1;
+    border: solid 10px pink;*/
+    margin: 0;
+    /*background: radial-gradient(white, pink)*/
+    background-image: url("notes.png");
+    background-repeat: repeat;
+    backdrop-filter: contrast(50%) brightness(1.7);
+    padding: 10px 20px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin: 5px;
+}
+
+.main_big {
+    display: flex;
+    /*justify-content: center;
+    /*align-items: center;*/
+    flex-direction: row;
+    margin: 15px 80px 80px 80px;
+    padding: 0;
+}
+
+.main_class {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    flex-direction: column;
+    margin: 5px;
+    /*padding: 10px;*/
+    /*width: 100%;*/
+}
+
+.in_big {
+    height: 155px;
+    width: auto;
+    transform: rotate(25deg);
+    margin: 14px;
+}
+
+.name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 70%;
+    /*border: solid 2px blue;*/
+}
+
+.name_min {
+    width: 70%;
+    justify-content: flex-start;
+    margin: 11px;
+}
+
+.str_in_big {
+    font-family: "Dancing Script";
+    font-size: 140px;
+    color: red; 
+    margin:0 0;
+    padding:0;
+    width: 100px;
+}
+
+.str_in_big_min {
+    font-size: 60px;
+    margin:0 5px;
+}
+
+.card {
+    width: 210px;
+    height: 170px;
+    border: solid 3px red;
+    border-radius: 16px;
+    margin: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size: 25px;
+    color: red;
+    background-color: pink;
+}
+
+/*.menu {
+    margin: 0;
+}*/
+
+.my {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 500px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mini-card {
+    width: 170px;
+    height: 35px;
+    border: solid 2px pink;
+    border-radius: 16px;
+    margin: 20px 3px 3px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+}
+.left {
+    border-right: solid 3px red;
+}
+.place {
+    font-size: 42px;
+    color: red;
+    text-align: center;
+}
+
+/*.name_mini-card {
+    display: none;
+    width: 45px;
+    height: 45px;
+    background-color: red;
+}
+.name_mini-card:hover {
+    display: flex;
+}*/
+
+.go_out {
+    width: 30px;
+    height: auto;
+}
+@keyframes out {
+    0% {transform: translate(0px, 0)}
+    15% {transform: translate(5px, 0px)}
+    30% {transform: translate(10px, 0px)}
+}
+.go_out:hover {
+    animation: out 1s infinite;
+}
+
+.img_menu {
+    width: 30px;
+    height: auto;
+}
+@keyframes menuu {
+    0% {transform: rotate(0deg)}
+    15% {transform: rotate(15deg)}
+    25% {transform: rotate(30deg)}
+    35% {transform: rotate(60deg)}
+    45% {transform: rotate(80deg)}
+    55% {transform: rotate(100deg)}
+    60% {transform: rotate(130deg)}
+    65% {transform: rotate(160deg)}
+    70% {transform: rotate(0deg)}
+}
+.mini-card:hover .img_menu{
+    animation: menuu 1s infinite;
+}
+
+.name_mini-card{
+    height:100%;
+    width:125px;
+    border-right: solid 2px pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-weight: 900;
+    font-size: 21px;
+    font-family: "Libre Baskerville";
+}
+
+.go_out:hover .name_mini-card.out{ 
+    background-color: aquamarine;
+}
+
+.block {
+    width: 80%;
+    height: 100px;
+    border: solid 2px red;
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    color: red;
+    font-weight: 800;
+}
+
+.block:hover {
+    background-color: lightgrey;
+    width: 85%;
+    font-size: 40px;
+    border: 4px solid red;
+}
+
+.read {
+    flex-direction: column;
+    border: red solid 3px;
+    background-color: none;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.upper {
+    width: 25%;
+    height: auto;
+    margin: 5%;
+}
+
+.up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comp_name {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 800;
+    color: red;
+    width: auto;
+}
+
+.text {
+    text-align: flex-start;
+    font-size: 20px;
+    color: black;
+    width: auto;
+    white-space: pre-wrap;
+    margin: 15px;
+}
+
+.row_spisoc {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 12px 0px 0px 0px;
+}
+
+/*.spisoc {
+    background-color: pink;
+    color: red;
+    font-size: 20px;
+    width: 170px;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: red solid 2px;
+    border-radius: 5px;
+    padding: 7px;
+    text-align: center;
+}*/
+
+a{
+    text-decoration: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.fact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 60px 0;
+    /*border: blue solid 2px;*/
+}
+
+iframe {
+    margin:7px;
+}
+
+.f {
+    width: 100%;
+    height:20px;
+    display: flex;
+    justify-content: center;
+}
+.r {
+    width:75px;
+    height: 40px;
+    background-color: pink;
+    color: red;
+    border-radius: 5px;
+    border: red solid 2px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.q {
+    font-size: 40px;
+    text-align: center;
+    font-family: "Dancing Script";
+}
+
+.spisoc_ {
+    background-color: pink;
+    color: red;
+    font-size: 20px;
+    width: 170px;
+    height: 40px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: red solid 2px;
+    border-radius: 5px;
+    padding: 7px;
+    text-align: center;
+    font-family: "Dancing Script";
+}
+
+.menu_{
+    width: 30%;
+    height: 35px;
+    border-radius: 16px;
+    margin: 5px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+/*.u { 
+    background-color: pink;
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 5px;
+    border: red solid 0;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-weight: 800;
+}*/
+
+.u_ { 
+    background-color: pink;
+    width: 70%;
+    height: 50px;
+    font-size: 30px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: red solid 2px;
+    color: red;
+}
+
+.u_:hover {
+    background-color: lightpink;
+    width: 74%;
+    font-size: 32px;
+    border: 4px solid red;
+}
+/*.u:hover {
+    background-color: lightpink;
+}*/
+
+input {
+    width: 70%;
+    height: 45px;
+    margin: 5px;
+}
+
+.pr {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .main_big {
+        flex-direction: column;
+        margin: 10px 50px 50px 50px
+    }
+    .left {
+        border-right: solid 0px red;
+        display: flex;
+        justify-content: center;
+    }
+    .column {
+        width: 100%;
+        justify-content: center;
+    }
+    .comp_name {
+        margin: 0;
+        font-size: 28px;
+    }
+    body {
+        padding: 7px 1px;
+    }
+    .text {
+        font-size: 19px;
+        margin: 7px;
+    }
+}
+
+/*@media (max-width: 480px) {
+    .str_in_big {
+        font-size: 100px;
+    }
+}*/
+
+@media (max-width: 520px) {
+    /*.str_in_big_min {
+        display: none;
+    }*/
+    .up {
+        flex-direction: column;
+        font-size: 26px;
+    }
+    /*.row_spisoc {
+        flex-direction: column;        
+    }*/
+    .spisoc_ {
+        font-size: 15px;
+        height: 30px;
+        margin: 2px;
+        border: red solid 1px;
+        border-radius: 3px;
+        padding: 3px;
+    }
+    .upper {
+        margin: 4% 4% 2% 4%;
+    }
+    .comp_name {
+        margin: 0;
+        font-size: 26px;
+    }
+    .mini-card {
+        width: 130px;
+        height: 25px;
+        border-radius: 16px;
+        margin: 5px 1px 1px 1px;
+    }
+    .menu_{
+        width: 130px;
+        height: 25px;
+        border-radius: 16px;
+        margin: 1px 5px;
+    }
+    .name_min {
+        margin: 5px;
+    }
+    .img_menu {
+        width: 18px;
+        height: auto;
+    }
+    .name_mini-card{
+        width: 100px;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    /*body {
+        padding: 7px 10px;
+    }*/
+    .upper {
+        width: 70%;
+    }
+    .text {
+        font-size: 17px;
+        margin: 4px;
+    }
+}
+
+@media (max-width: 300px) {
+    .my {
+        flex-direction: column;
+    }
+    .menu_ {
+        margin: 4px 1px;
+        width: 32px;
+        height: 32px;
+    }
+    .name_mini-card{
+        display: none;
+    }
+    .mini-card {
+        width: 32px;
+        height: 32px;
+        border: solid 2px pink;
+        border-radius: 6px;
+    }
+}
+
+footer {
+    background-color: pink;
+    color: red;
+    padding: 6px;
+
+}
