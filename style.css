@@ -5,10 +5,10 @@ body {
     /*background-color: #FFF1C1;
     border: solid 10px pink;*/
     margin: 0;
-    /*background: radial-gradient(white, pink)*/
+    /*background: radial-gradient(white, pink)
     background-image: url("notes.png");
     background-repeat: repeat;
-    backdrop-filter: contrast(50%) brightness(1.7);
+    backdrop-filter: contrast(50%) brightness(1.7);*/
     padding: 10px 20px;
 }
 
